@@ -9,7 +9,7 @@ const Card = () => {
         setUserData(data);
       });
   }, []);
-  // console.log(userData.results[0].picture.medium);
+ 
   return (
     <section className="flex justify-center h-screen ">
       <div className="container border w-[450px] my-auto rounded-xl bg-gradient-to-r from-gray-950 via-gray-500 to-black">
@@ -21,7 +21,7 @@ const Card = () => {
             <div className="">
               <p><span className="text-yellow-400">First Name: </span><span className="text-gray-200">{userData?.results[0]?.name?.first}</span></p>
 
-              <p><span className="text-yellow-400">First Name: </span><span className="text-gray-200">{userData?.results[0]?.name?.last}</span></p>
+              <p><span className="text-yellow-400">Last Name: </span><span className="text-gray-200">{userData?.results[0]?.name?.last}</span></p>
             </div>
             <div>
               <p><span className="text-yellow-400">Gender: </span><span className="text-gray-200">{userData?.results[0]?.gender}</span></p>
